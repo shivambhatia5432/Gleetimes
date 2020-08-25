@@ -8,26 +8,24 @@ We tried to make UI simple and colourful as this App is made for catering only y
 So we want to solve this problem, in simple words: We want to build a positive platform for kids to learn new things and see that this world is not bad at all, good things happen every day here. Most kids can hardly read so we have also attached listen to news feature with each article and speed of the audio can also be changed.<br><br>
 This is the video on how ADMINS add articles to the website:
 <br>
-<b>Youtube Video Link: </b> https://www.youtube.com/watch?v=skmg5iM_gpU
-<br>
 <b>Hosted Link:</b> https://glee-hack.herokuapp.com
 <hr>
 <h2><b>Preview:</b></h2<br><br>
-<img src="https://github.com/TEAM-ALPHA-Q/SRM_HACKATHON/blob/master/screenshots/preview2_gif.gif" width = 50%/><img src="https://github.com/TEAM-ALPHA-Q/SRM_HACKATHON/blob/master/screenshots/preview_gif.gif" width = 50% />
+<img src="https://github.com/shivambhatia5432/gleetimes/blob/master/screenshots/preview2_gif.gif" width = 50%/><img src="https://github.com/shivambhatia5432/gleetimes/blob/master/screenshots/preview_gif.gif" width = 50% />
 <br>
   <h3><b>Here are some screenshots below :</h4></b>
   <h3><b>Homepage :</h3><b><br>
-    <img src="https://github.com/TEAM-ALPHA-Q/SRM_HACKATHON/blob/master/screenshots/Home.png" width = 80% height= 70%><br>
+    <img src="https://github.com/shivambhatia5432/gleetimes/blob/master/screenshots/Home.png" width = 80% height= 70%><br>
   <h3><b>All News Page :</h3><b><br>
-    <img src="https://github.com/TEAM-ALPHA-Q/SRM_HACKATHON/blob/903ad5dc192e522f2219641b9d97abaffec689d5/screenshots/ALL_NEWS.png" width = 80% height= 70%><br>
+    <img src="https://github.com/shivambhatia5432/gleetimes/blob/master/screenshots/ALL_NEWS.png" width = 80% height= 70%><br>
   <h3><b>Post Page :</h3><b><br>
-    <img src="https://github.com/TEAM-ALPHA-Q/SRM_HACKATHON/blob/master/screenshots/Post.png" width = 80% height= 70%><br>
+    <img src="https://github.com/shivambhatia5432/gleetimes/blob/master/screenshots/Post.png" width = 80% height= 70%><br>
   <h3><b>Login Page :</h3><b><br>
-    <img src="https://github.com/TEAM-ALPHA-Q/SRM_HACKATHON/blob/903ad5dc192e522f2219641b9d97abaffec689d5/screenshots/Login.png" width = 80% height= 70%><br>
+    <img src="https://github.com/shivambhatia5432/gleetimes/blob/master/screenshots/Login.png" width = 80% height= 70%><br>
   <h3><b>Register Page :</h3><b><br>
-    <img src="https://github.com/TEAM-ALPHA-Q/SRM_HACKATHON/blob/903ad5dc192e522f2219641b9d97abaffec689d5/screenshots/Register.png" width = 80% height= 70%><br>
+    <img src="https://github.com/shivambhatia5432/gleetimes/blob/master/screenshots/Register.png" width = 80% height= 70%><br>
   <h3><b>Publish Page :</h3><b><br>
-    <img src="https://github.com/TEAM-ALPHA-Q/SRM_HACKATHON/blob/903ad5dc192e522f2219641b9d97abaffec689d5/screenshots/Publish.png" width = 80% height= 70%><br>
+    <img src="https://github.com/shivambhatia5432/gleetimes/blob/master/screenshots/Publish.png" width = 80% height= 70%><br>
   
     
 
