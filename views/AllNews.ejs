@@ -2,29 +2,45 @@
 
 <br>
 <div id="ALL">
-<b><h1 id="Alltitle">ALL ARTICLES</h1></b>
-<br>
-<div id="ALLhome">
-  <% for(let i=posts.length-1;i>=0;i--){ %>
-    <a id="divlink" href="/posts/<%= posts[i].posttitle %>">
+  <b>
+    <h1 id="Alltitle">
+      ALL ARTICLES
+    </h1>
+  </b>
 
-    <div id="ALLhomepost" class="content">
-    <h2>
-      <p id="posttitle">
-        <%=posts[i].posttitle%>
-      </p>
-    </h2>
-    <h5>
-    <p><%=posts[i].postdate%></p>
-    </h5>
-    <img src="<%=posts[i].postimage%>">
-    <p>
-        <%=posts[i].postcontent.substring(0,80)+"..." %>
-        <a href="/posts/<%= posts[i].posttitle %>">Read More</a>
-    </p>
-    </div>
-    </a>
+  <br>
+  
+  <div id="ALLhome">
+
+    <% for(let i=posts.length-1;i>=0;i--){ %>
+
+      <a id="divlink" href="/posts/<%= posts[i].posttitle %>">
+
+        <div id="ALLhomepost" class="content">
+
+        <h2>
+          <p id="posttitle">
+            <%=posts[i].posttitle%>
+          </p>
+        </h2>
+
+        <h5>
+          <p>
+            <%=posts[i].postdate%>
+          </p>
+        </h5>
+
+        <img src="<%=posts[i].postimage%>">
+
+        <p>
+            <%=posts[i].postcontent.substring(0,80)+"..." %>
+            <a href="/posts/<%= posts[i].posttitle %>">Read More</a>
+        </p>
+
+        </div>
+      </a>
     <%}%>
-</div>
+    
+  </div>
 </div>
 <%- include('partials/footer'); -%>
