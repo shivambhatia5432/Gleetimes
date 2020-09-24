@@ -1,23 +1,37 @@
 <%- include('partials/header') %>
-  <div style="padding: 3%;
-              margin:0 auto;
-              height: 100vh;
-              width: fit-content;">
+  <div id="logindiv">
           <!-- Makes POST request to /login route -->
           <form action="/login" method="POST">
+
             <div class="form-group">
-              <center><h2>LOGIN</h2></center>
+
+              <center>
+                <h2>
+                  LOGIN
+                </h2>
+              </center>
+
               <label for="email">Email</label>
               <input type="email" class="form-control" name="username">
+
             </div>
+
             <div class="form-group">
+
               <label for="password">Password</label>
               <input type="password" class="form-control" name="password">
+
             </div>
-            <button type="submit" class="example_f">Login</button>
+
+            <button type="submit" class="Orange_Btn">
+              Login
+            </button>
+
           </form>
   
-          <a href="/register"><button class="example_f">Register</button></a>
+          <a href="/register"><button class="Orange_Btn">Register</button></a>
+
       </center>
+      
     </div>
     <%- include('partials/footer'); -%>

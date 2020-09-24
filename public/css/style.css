@@ -1,6 +1,15 @@
+body{
+    font-size: large !important;
+    background-image: linear-gradient(-225deg, #5271C4 0%, #B19FFF 48%, #ECA1FE 100%);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 a{
     cursor: pointer;
 }
+
+/*Navbar Formatting Starts*/
 
 .navbar a:hover,#brand-link:hover{
     color:rgb(17, 0, 110) !important;
@@ -16,6 +25,7 @@ a{
 #brand-link{
     color: rgb(239, 253, 247) !important;
 }
+
 /*Navbar Formatting End*/
 
 /*HomePage Formatting Start*/
@@ -95,9 +105,6 @@ a{
 
 @media screen and (min-width: 1000px) {
     #homevid{
-        /* -webkit-backdrop-filter: blur(10px);
-        backdrop-filter: blur(10px);  
-        background-color: rgba(255, 255, 255, 0.3); */
         text-align: center;
         margin: 0 auto;
         width: 550px;
@@ -196,7 +203,6 @@ a{
     text-align: center;
     border-radius: 3%;
     background-color: white;
-    /* background-image: linear-gradient(to top, #accbee 0%, #e7f0fd 100%); */
     margin: 0 auto;
     margin: 2%;
     min-height: 100%;
@@ -207,6 +213,9 @@ a{
 #posttitle{
     padding:2%;
 }
+#postreference{
+    color:darkblue;
+}
 #nextbutton{
     float: right;
     transition:0.3s;
@@ -215,31 +224,87 @@ a{
     float: left;
 }
 
-
 /*PostPage Formatting End*/
+
+/* ComposePage Formatting Start*/
+
+#composediv{
+    padding: 3%;
+    margin-top: 2%;
+    margin-left: auto;
+    margin-right: auto;
+    height: 100%;
+    width: 50vw;
+    justify-content: center;
+    background-color: white;
+}
+
+#lineStyle{
+    height:2px;
+    border-width:0;
+    color:black;
+    background-color:black;
+}
+
 #Logoutbutton{
-    /* margin-top:2%;
-    margin-right: 2%; */
     float:right;
 }
 
-#footer{
- background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%)!important;
- bottom: 0 !important;
- width:100%; 
- margin-top: 3%;
-color: white !important;
+/* ComposePage Formatting Ends*/
+
+/* LoginPage Formatting Starts*/
+
+#logindiv{
+    padding: 3%;
+    margin:0 auto;
+    height: 100vh;
+    width: fit-content;
 }
 
-body{
-font-size: large !important;
-background-image: linear-gradient(-225deg, #5271C4 0%, #B19FFF 48%, #ECA1FE 100%);
-/* background-image: linear-gradient(to right, #6a11cb 0%, #2575fc 100%); */
-background-repeat: no-repeat;
-background-size: cover;
-/* background-image: linear-gradient(to top, #a3bded 0%, #6991c7 100%); */
+/* LoginPage Formatting Ends*/
+
+/* RegisterPage Formatting Starts*/
+
+#registerdiv{
+    padding: 3%;
+    margin:0 auto;
+    height: 100vh;
+    width: fit-content;
+    justify-content: center;
 }
-.example_c {
+
+#registerhead{
+    text-align: center;
+}
+
+#backBtn{
+    justify-content: center !important;
+    text-align: center !important;
+}
+/* RegisterPage Formatting Ends*/
+
+/* AboutPage Formatting Ends*/
+
+#aboutcontainer{
+    justify-content: center;
+    margin-top:5%;
+}
+#aboutdiv{
+    padding: 3%;
+    margin:0 auto;
+    height: 100%;
+    width: 50vw;
+    justify-content: center;
+    border-radius: 5%;
+    background-image: linear-gradient(to top, #1e3c72 0%, #1e3c72 1%, #2a5298 100%);
+    color:white;
+}
+
+/* AboutPage Formatting Ends*/
+
+/* ButtonStyle Starts */
+
+.White_Btn {
     text-decoration: none !important;
     font-weight: bolder !important;
     color: #494949 !important;
@@ -250,38 +315,41 @@ background-size: cover;
     border: 2px solid #494949 !important;
     display: inline-block;
     transition: all 0.4s ease 0s;
-    }
-    .example_c:hover {
+}
+
+    .White_Btn:hover {
         color: #ffffff !important;
         background: rgb(155, 164, 248) !important;
         border-color: rgb(155, 164, 248) !important;
         transition: all 0.4s ease 0s;
     }
-    .example_f {
-        text-decoration: none !important;
-        border-radius: 4px;
-        /* background: linear-gradient(to right, #67b26b, #4ca2cb) !important; */
-        background-image: linear-gradient(-60deg, #ff5858 0%, #f09819 100%) !important;
-        border: none;
-        color: #FFFFFF;
-        text-align: center;
-        text-transform: uppercase;
-        font-size: 15px;
-        padding: 15px;
-        width: 200px;
-        transition: all 0.4s;
-        cursor: pointer;
-        margin: 5px;
-      }
-      .example_f span {
+
+.Orange_Btn {
+    text-decoration: none !important;
+    border-radius: 4px;
+    background-image: linear-gradient(-60deg, #ff5858 0%, #f09819 100%) !important;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 15px;
+    padding: 15px;
+    width: 200px;
+    transition: all 0.4s;
+    cursor: pointer;
+    margin: 5px;
+}
+
+    .Orange_Btn span {
         text-decoration: none !important;
         cursor: pointer;
         display: inline-block;
         position: relative;
         transition: 0.4s;
         color: #FFFFFF;
-      }
-      .example_f span:after {
+    }
+
+    .Orange_Btn span:after {
         text-decoration: none !important;
         content: '\00bb';
         position: absolute;
@@ -290,15 +358,26 @@ background-size: cover;
         right: -20px;
         transition: 0.5s;
         color: #FFFFFF;
-      }
-      .example_f:hover span {
+    }
+    .Orange_Btn:hover span {
         text-decoration: none !important;
         padding-right: 15px;
         color: #FFFFFF;
-      }
-      .example_f:hover span:after {
+    }
+
+    .Orange_Btn:hover span:after {
         text-decoration: none !important;
         opacity: 1;
         right: 0;
         color: #FFFFFF;
-      }
+    }
+
+/* ButtonStyle Ends */
+
+#footer{
+    background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%)!important;
+    bottom: 0 !important;
+    width:100%; 
+    margin-top: 3%;
+    color: white !important;
+}

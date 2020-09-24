@@ -1,26 +1,29 @@
 <%- include('partials/header') %>
-<div style="padding: 3%;
-margin:0 auto;
-height: 100vh;
-width: fit-content;
-justify-content: center;">
+<div id="registerdiv">
 
-<h1 style="text-align: center;">Register</h1><br>
-          <!-- Makes POST request to /register route -->
-          <form action="/register" method="POST">
-            <div class="form-group">
-              <label for="email">Email</label>
-              <input type="email" class="form-control" name="username">
-            </div>
-            <div class="form-group">
-              <label for="password">Password</label>
-              <input type="password" class="form-control" name="password">
-            </div>
-            <button type="submit" class="example_f">Register</button>
-          </form>
-          <center>
-<a href="/login" style="justify-content: center !important; text-align: center !important;"><-Back</a>
-</center>
+  <h1 id="registerhead">
+    Register
+  </h1>
+
+  <br>
+
+  <form action="/register" method="POST">
+
+    <div class="form-group">
+      <label for="email">Email</label>
+      <input type="email" class="form-control" name="username">
+    </div>
+
+    <div class="form-group">
+      <label for="password">Password</label>
+      <input type="password" class="form-control" name="password">
+    </div>
+
+    <button type="submit" class="Orange_Btn">Register</button>
+  </form>
+  <center>
+    <a href="/login" id="backBtn"><-Back</a>
+  </center>
 </div>
 
 <%- include('partials/footer') %>

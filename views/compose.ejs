@@ -1,48 +1,70 @@
 <%- include('partials/header'); -%>
+<div id="composediv">
+    <p>
+        <a href="/logout"><button class="White_Btn">Log Out</button></a><br>
+        
+        <br>
 
-<br>
-<div style="padding: 3%;
-margin:0 auto;
-height: 100%;
-width: 50vw;
-justify-content: center;
-background-color: white;">
-<p>
- <a style="float:right;"href="/logout"><button class="example_c">Log Out</button></a><br>
-<!-- <h1>Compose, Please don't include special characters in title specially "-"</h1> -->
-<br>
-<center><label><h2>Post Now</h2></label></center>
-<form method="POST" action="/publish">
+        <center>
+            <label>
+                <h2>
+                    Post Now
+                </h2>
+            </label>
+        </center>
 
-    <div class="form-group">
-        <label for="title"><h3>Title</h3></label>
-        <input type="text" name="title" id="title" class="form-control">
-        <label for="title"><h3>Image</h3></label>
-        <input type="text" name="image" id="image" class="form-control">
-        <label for="content"><h3>Content</h3></label>
-        <textarea name="content" id="content" rows="5" cols="80" class="form-control"></textarea>
-        <label for="reference"><h3>Reference</h3></label>
-        <input type="text" name="reference" id="reference" class="form-control">
-    </div>
-    <center>
-    <button type="submit" id="publish" class="example_f">Publish</button>
-    </center>
-</form>
-</p>
-<br>
-<hr style="height:2px;border-width:0;color:black;background-color:black">
-<p>
-    <center>
-<label for="dform"><h2>Delete Post</h2></label></center>
-<form method="POST" action="/delete" id="dform">
-    <div class="form-group">
-        <label for="dtitle"><h3>Title</h3></label>
-        <input type="text" name="dtitle" id="dtitle" class="form-control">
-    </div>
-    <center>
-    <button type="submit" id="delete" class="example_f">Delete</button>
-    </center>
-</form>
-</p>
+        <form method="POST" action="/publish">
+
+            <div class="form-group">
+
+                <label for="title"><h3>Title</h3></label>
+                <input type="text" name="title" id="title" class="form-control">
+
+                <label for="title"><h3>Image</h3></label>
+                <input type="text" name="image" id="image" class="form-control">
+
+                <label for="content"><h3>Content</h3></label>
+                <textarea name="content" id="content" rows="5" cols="80" class="form-control"></textarea>
+
+                <label for="reference"><h3>Reference</h3></label>
+                <input type="text" name="reference" id="reference" class="form-control">
+
+            </div>
+
+            <center>
+            <button type="submit" id="publish" class="Orange_Btn">Publish</button>
+            </center>
+
+        </form>
+    </p>
+    
+    <br>
+
+    <hr id="lineStyle">
+    <p>
+        <center>
+            <label for="dform">
+                <h2>
+                    Delete Post
+                </h2>
+            </label>
+        </center>
+        <form method="POST" action="/delete" id="dform">
+
+            <div class="form-group">
+
+                <label for="dtitle"><h3>Title</h3></label>
+                <input type="text" name="dtitle" id="dtitle" class="form-control">
+
+            </div>
+            <center>
+
+            <button type="submit" id="delete" class="Orange_Btn">Delete</button>
+
+            </center>
+        </form>
+
+    </p>
+    
 </div>
 <%- include('partials/footer'); -%>

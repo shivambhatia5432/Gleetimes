@@ -55,14 +55,8 @@ passport.deserializeUser(function(id, done) {
   });
 
 
-// var posts=[];
-
-// app.get("/public/js/script.js",(req,res)=>{
-//   res.sendFile('public/js/script.js' , { root : __dirname});
-// });
-
-
 app.get("/",function(req,res){
+
   User.findOne({username:adminuser},function(err,foundUser){
     if(!err){
       if(!foundUser){
@@ -79,7 +73,9 @@ app.get("/",function(req,res){
     }
   });
 });
+
 app.get("/All",function(req,res){
+
   User.findOne({username:adminuser},function(err,foundUser){
     if(!err){
       if(!foundUser){
@@ -95,8 +91,8 @@ app.get("/All",function(req,res){
       }
     }
   });
-
 });
+
 app.get("/posts/:posttitle",function(req,res){
 
   User.findOne({username:adminuser},function(err,foundUser){
@@ -135,8 +131,8 @@ app.get("/posts/:posttitle",function(req,res){
 
 
 app.post("/publish",(req,res)=>{
-var today = new Date();
-var date = today.getDate()+'-'+(today.getMonth()+1)+'-'+today.getFullYear();
+  var today = new Date();
+  var date = today.getDate()+'-'+(today.getMonth()+1)+'-'+today.getFullYear();
     post={
         posttitle:req.body.title,
         postimage:req.body.image,
